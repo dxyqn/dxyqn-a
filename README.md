@@ -1,2 +1,2 @@
-# dxyqn-a
-dxyqn-cli命令行测试模板啊
+# dxyqn-vue2-elmentui
+dxyqn-vue2-elmentui模板
