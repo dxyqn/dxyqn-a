@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta base="/web/"> -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<style id="styleContent"></style>
+		<title>道学忆秋年</title>
+		<!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+		<% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+		<link src="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload">
+		<% } %>
+		<% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+		<script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>" rel="preload"></script>
+		<% } %>
+
+	</head>
+	<body>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>
